@@ -21,10 +21,10 @@
       <p>Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</p>
       <!--Navigation Bar-->
       <nav>
-        <button>Conheça a Linx</button>
-        <button>Ajude o algorítmo</button>
-        <button>Seus produtos</button>
-        <button>Compartilhe</button>
+        <button onClick="document.getElementById('section-form').scrollIntoView()" >Conheça a Linx</button>
+        <button onClick="document.getElementById('section-form').scrollIntoView()" >Ajude o algorítmo</button>
+        <button onClick="document.getElementById('section-product').scrollIntoView()" >Seus produtos</button>
+        <button onClick="document.getElementById('share').scrollIntoView()" >Compartilhe</button>
       </nav>
       <!--Navigation Bar end-->
     </header>
@@ -33,7 +33,7 @@
     <!--Main Content-->
     <main>
       <!--Section Form-->
-      <section>
+      <section id="section-form">
         <aside>
           <h2>Ajude o algorítmo a ser mais certeiro</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt in sem sit amet mollis. Donec ac elit nec ex aliquam vulputate. Nunc vitae nunc a turpis lacinia bibendum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam erat volutpat.</p>
@@ -66,7 +66,7 @@
       <!--Section Form end-->
         <h3 class="separator">Sua seleção especial</h3>
       <!--Section Products-->
-      <section>
+      <section id="section-product">
         <article class="product">
           <img src="" alt="produto1">
           <h4>Nome do produto</h4>
@@ -145,17 +145,26 @@
       </section>
       <!--Section Products end-->
       <h3 class="separator">Compartilhe a novidade</h3>
+      <!--Div Share-->
       <div id="share">
-        <div>
-          <label for="friend-name">Nome do amigo:</label>
-          <input id="friend-name" name="friend-name" type="text">
-          <label for="friend-email">E-mail:</label>
-          <input id="friend-email" name="friend-email" type="text">
-        </div>
-        <button>
-          <h4>Enviar agora</h4>
-        </button>
+        <h4>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</h4>
+        <form action="">
+          <div id="share-fields">
+            <div class="share-input">
+              <label for="share-name">Nome do amigo:</label>
+              <input id="share-name" name="share-name" type="text">
+            </div>
+            <div class="share-input">
+              <label for="share-email">E-mail:</label>
+              <input id="share-email" name="share-email" type="text">
+            </div>
+          </div>
+          <button>
+            <h4>Enviar agora</h4>
+          </button>
+        </form>
       </div>
+      <!--Div Share end-->
     </main>
     <!--Main Content end-->
     <!--Footer-->

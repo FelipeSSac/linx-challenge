@@ -8,6 +8,10 @@
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   color: #888888;
   background:#FFF;
@@ -22,12 +26,21 @@ button{
   background-color: #FFF;
   font-size: 16px;
 
-  transition: filter cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+  transition: filter cubic-bezier(0.075, 0.82, 0.165, 1) 2s,
+  color cubic-bezier(0.075, 0.82, 0.165, 1) 2s,
+  background-color cubic-bezier(0.075, 0.82, 0.165, 1) 2s,
+  box-shadow cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
   cursor: pointer;
 }
 
 button:hover{
   filter: brightness(0.9);
+  color: #FFF;
+  background-color: #888888;
+}
+
+button:active{
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
 }
 
 button:disabled{
@@ -190,6 +203,38 @@ section:last-of-type{
   width: 400px;
 
   margin-inline: auto;
+}
+
+/* Div Share styles */
+#share{
+  width: 1200px;
+  height: 400px;
+
+  padding-top: 50px;
+  margin-inline: auto;
+
+  text-align: center;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+
+#share-fields{
+  display: flex;
+  gap: 30px;
+}
+
+.share-input{
+  margin-top: 30px;
+
+  text-align: start;
+  flex: 1;
+}
+
+#share button{
+  width: 400px;
+
+  margin-top: 30px;
 }
 
 /* Footer styles */
