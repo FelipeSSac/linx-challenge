@@ -1,5 +1,7 @@
 <h1 align="center">Linx Challenge</h1>
 
+<h1 align="center"><img src="./img/linxchallenge.gif" /></h1>
+
 ## ✨ Technologies
 
 This project has been setted with the following technologies:
@@ -12,17 +14,18 @@ This project has been setted with the following technologies:
 ## 💻 Project
 
 HTML, CSS and JavaScript vanilla, single page e-commerce application.
+You can preview at [VERCEL](https://linx-challenge-nu.vercel.app/).
 
 ## 🚀 How to run
 
-.Option 1 
+### Option 1 
 - Clone this repository.
 - Drag `index.html` file.
 - Drop it at your browser.
 
-Option 2
+### Option 2
 - Clone this repository.
 - Open project folder at Visual Studio Code
 - install 'Live Server' extension.
-- Right click on `index.html`, then `start live server`.
+- Right click on `index.html`, then `Open with live server`.
 - It will open on your default browser.

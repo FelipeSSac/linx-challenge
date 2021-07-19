@@ -1,0 +1,52 @@
+/* E-mail size */
+@media (max-width: 1215px) and (min-width: 484px)
+{
+  .separator{
+    display: none;
+  }
+
+  /* Header styles */
+  header{
+    justify-content: center;
+  }
+
+  nav{
+    display: none;
+  }
+
+  /* Section Form styles */
+  section:first-of-type{
+    display: none;
+  }
+
+
+/* Section Products styles */
+  section:last-of-type{
+    width: 90%;
+  }
+
+  .email-element{
+    width: 100%;
+    display: block;
+
+    margin-inline: auto;
+  }
+
+  #content{
+    width: 443px;
+
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 41px;
+  }
+  
+  .product{
+    margin: 0;
+  }
+
+  /* Div Share styles */
+  #share{
+    display: none;
+  }
+}

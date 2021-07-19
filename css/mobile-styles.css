@@ -1,0 +1,119 @@
+/* Mobile size */
+@media (max-width: 483px)
+{
+
+  .separator {
+    width: 90%;
+
+    margin-top: 60px;
+  }
+
+  /* Header styles */
+  header{
+    height: auto;
+
+    padding: 30px 20px 0 20px;
+
+    text-align: left;
+  }
+
+  nav{
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
+
+  /* Main Content styles 
+      Section styles */
+  section{
+    padding: 0;
+    margin-inline: auto;
+  }
+
+  /* Section Form styles */
+  section:first-of-type{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Aside styles */
+  section aside{
+    width: 90%;
+  }
+
+  /* Form styles */
+  section form{
+    width: 95%;
+    
+    margin-inline: auto;
+  }
+
+  /* Section Products styles */
+  section:last-of-type{
+    width: 100%;
+  }
+
+  .email-element{
+    display: none;
+  }
+
+  #content{
+    width: 100%;
+  
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product{
+    width: 95%;
+    height: 200px;
+
+    margin: 0 auto;
+
+    gap: 20px;
+    flex-direction: row;
+  }
+  
+  .product img{
+    width:200px;
+    height:150px;
+  
+    border: 1px solid #000;
+  }
+
+  .product-info{
+    width: 200px;
+    height: 380px;
+
+    display: flex;
+  }
+
+  .product-desc{
+    display: none;
+  }
+
+  #next-page{
+    width: 80%;
+  }
+
+  /* Div Share styles */
+  #share{
+    width: 100%;
+    height: 500px;
+  }
+
+  #share-fields{
+    padding-inline: 10px;
+    
+    flex-direction: column;
+    gap: 0;
+  }
+
+  #share button{
+    width: 80%;
+  }
+}
