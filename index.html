@@ -6,14 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Desafio Linx</title>
+
+    <!--CSS styles-->
     <link href="./css/index.css" rel="stylesheet">
     <link href="./css/email-styles.css" rel="stylesheet">
     <link href="./css/mobile-styles.css" rel="stylesheet">
+
+     <!--Javascript file-->
+     <script type="text/javascript" src="./js/index.js"></script>
   </head>
 
   <body onLoad="handleOnLoad()">
-    <!--Javascript file-->
-    <script type="text/javascript" src="./js/index.js"></script>
     <!--Header-->
     <header>
       <div>
@@ -37,10 +40,18 @@
       <!--Section Form-->
       <section id="section-form">
         <aside>
-          <h2>Ajude o algorítmo a ser mais certeiro</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt in sem sit amet mollis. Donec ac elit nec ex aliquam vulputate. Nunc vitae nunc a turpis lacinia bibendum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam erat volutpat.</p>
-          <br>
-          <p>Maecenas venenatis volutpat metus a vulputate. Vivamus id interdum tortor. Donec mollis consectetur interdum. Proin suscipit hendrerit interdum.Mauris blandit vel nisi sit amet lacinia. Aliquam bibendum malesuada augue et maximus. Fusce vel justo ullamcorper, porttitor felis in, vestibulum massa. In maximus a est at facilisis.</p>
+          <div id="about-alg">
+            <h2>Ajude o algorítmo a ser mais certeiro</h2>
+            <button id="about-alg-button" onClick="handleShowAbout()" class="other-button">
+            </button>
+          </div>
+          <div id="about-alg-text" style="height: 228px">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt in sem sit amet mollis. Donec ac elit nec ex aliquam vulputate. Nunc vitae nunc a turpis lacinia bibendum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam erat volutpat.
+            </p>
+            <br>
+            <p>Maecenas venenatis volutpat metus a vulputate. Vivamus id interdum tortor. Donec mollis consectetur interdum. Proin suscipit hendrerit interdum.Mauris blandit vel nisi sit amet lacinia. Aliquam bibendum malesuada augue et maximus. Fusce vel justo ullamcorper, porttitor felis in, vestibulum massa. In maximus a est at facilisis.
+            </p>
+          </div>
         </aside>
         <form>
           <label for="name">Seu nome:</label>
@@ -77,9 +88,6 @@
         <h3 class="separator">Sua seleção especial</h3>
         <div id="content">
         </div>
-        <button id="next-page" onClick="handleNextPage()">
-          <h4>Ainda mais produtos aqui!</h4>
-         </button>
       </section>
       <!--Section Products end-->
       <!--Div Share-->

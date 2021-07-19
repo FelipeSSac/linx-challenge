@@ -17,7 +17,7 @@ body{
   background:#FFF;
 }
 
-button{
+button:not(.other-button){
   height: 40px; 
 
   border-radius: 6px;
@@ -33,17 +33,17 @@ button{
   cursor: pointer;
 }
 
-button:hover{
+button:not(.other-button):hover{
   filter: brightness(0.9);
   color: #FFF;
   background-color: #888888;
 }
 
-button:active{
+button:not(.other-button):active{
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
 }
 
-button:disabled{
+button:not(.other-button):disabled{
   opacity: 0.6;
   cursor: not-allowed;
 }
@@ -144,6 +144,22 @@ section aside{
   padding: 0 10px;
 }
 
+#about-alg-text{
+  word-wrap: break-word;
+  overflow: hidden;
+
+  transition: ease-in-out 1s;
+}
+
+#about-alg{
+ display:flex;
+ align-items: center; 
+}
+
+#about-alg-button{
+  display: none;
+}
+
 aside h2{
   margin: 20px 0;
 }
@@ -222,7 +238,7 @@ section:last-of-type{
   gap: 10px;
 }
 
-#next-page{
+#show-more{
   width: 400px;
 
   margin-top: 30px;

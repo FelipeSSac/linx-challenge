@@ -28,7 +28,8 @@
   .email-element{
     width: 100%;
     display: block;
-
+    
+    margin-bottom: 40px;
     margin-inline: auto;
   }
 

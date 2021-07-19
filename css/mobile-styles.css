@@ -42,7 +42,27 @@
 
   /* Aside styles */
   section aside{
-    width: 90%;
+    width: 94%;
+
+    margin-inline: auto;
+  }
+
+  #about-alg-button{
+    width: 60px;
+    height: 60px;
+
+    display: initial;
+    background-image: url(../img/arrow.png);
+    background-color: #FFF;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40px;
+
+    transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
+  }
+
+  .selected-button{
+    transform: scaleY(-1);
   }
 
   /* Form styles */
@@ -96,7 +116,7 @@
     display: none;
   }
 
-  #next-page{
+  #show-more{
     width: 80%;
   }
 
