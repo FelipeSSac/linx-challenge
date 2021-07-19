@@ -11,9 +11,9 @@
     <link href="./css/mobile-styles.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body onLoad="handleOnLoad()">
     <!--Javascript file-->
-    <script src="js/index.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
     <!--Header-->
     <header>
       <div>
@@ -76,96 +76,8 @@
         </div>
         <h3 class="separator">Sua seleção especial</h3>
         <div id="content">
-          <article class="product">
-            <img src="" alt="produto1">
-            <div class="product-info">
-              <h4>Nome do produto</h4>
-              <p class="product-desc">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</p>
-              <h5>De: R$23,99</h5>
-              <h3>Por: R$19,99</h3>
-              <h5>ou 2x de R$9,99</h5>
-              <button>Comprar</button>
-            </div>
-          </article>
-          <article class="product">
-            <img src="" alt="produto1">
-            <div class="product-info">
-              <h4>Nome do produto</h4>
-              <p class="product-desc">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</p>
-              <h5>De: R$23,99</h5>
-              <h3>Por: R$19,99</h3>
-              <h5>ou 2x de R$9,99</h5>
-              <button>Comprar</button>
-            </div>
-          </article>
-          <article class="product">
-            <img src="" alt="produto1">
-            <div class="product-info">
-              <h4>Nome do produto</h4>
-              <p class="product-desc">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</p>
-              <h5>De: R$23,99</h5>
-              <h3>Por: R$19,99</h3>
-              <h5>ou 2x de R$9,99</h5>
-              <button>Comprar</button>
-            </div>
-          </article>
-          <article class="product">
-            <img src="" alt="produto1">
-            <div class="product-info">
-              <h4>Nome do produto</h4>
-              <p class="product-desc">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</p>
-              <h5>De: R$23,99</h5>
-              <h3>Por: R$19,99</h3>
-              <h5>ou 2x de R$9,99</h5>
-              <button>Comprar</button>
-            </div>
-          </article>
-          <article class="product">
-            <img src="" alt="produto1">
-            <div class="product-info">
-              <h4>Nome do produto</h4>
-              <p class="product-desc">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</p>
-              <h5>De: R$23,99</h5>
-              <h3>Por: R$19,99</h3>
-              <h5>ou 2x de R$9,99</h5>
-              <button>Comprar</button>
-            </div>
-          </article>
-          <article class="product">
-            <img src="" alt="produto1">
-            <div class="product-info">
-              <h4>Nome do produto</h4>
-              <p class="product-desc">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</p>
-              <h5>De: R$23,99</h5>
-              <h3>Por: R$19,99</h3>
-              <h5>ou 2x de R$9,99</h5>
-              <button>Comprar</button>
-            </div>
-          </article>
-          <article class="product">
-            <img src="" alt="produto1">
-            <div class="product-info">
-              <h4>Nome do produto</h4>
-              <p class="product-desc">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</p>
-              <h5>De: R$23,99</h5>
-              <h3>Por: R$19,99</h3>
-              <h5>ou 2x de R$9,99</h5>
-              <button>Comprar</button>
-            </div>
-          </article>
-          <article class="product">
-            <img src="" alt="produto1">
-            <div class="product-info">
-              <h4>Nome do produto</h4>
-              <p class="product-desc">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</p>
-              <h5>De: R$23,99</h5>
-              <h3>Por: R$19,99</h3>
-              <h5>ou 2x de R$9,99</h5>
-              <button>Comprar</button>
-            </div>
-          </article>
         </div>
-        <button id="next-page">
+        <button id="next-page" onClick="handleNextPage()">
           <h4>Ainda mais produtos aqui!</h4>
          </button>
       </section>
@@ -182,7 +94,7 @@
             </div>
             <div class="share-input">
               <label for="share-email">E-mail:</label>
-              <input id="share-email" name="share-email" type="text">
+              <input id="share-email" name="share-email" type="email">
             </div>
           </div>
           <button>
