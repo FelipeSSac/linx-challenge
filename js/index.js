@@ -91,15 +91,15 @@ const handleShowMore = async () => {
         productInfo.appendChild(description);
 
         var oldPrice = document.createElement('h5');
-        oldPrice.textContent = `De: R$${product.oldPrice},00`;
+        oldPrice.textContent = `De: R$${floatToString(product.oldPrice)}`;
         productInfo.appendChild(oldPrice);
 
         var price = document.createElement('h3');
-        price.textContent = `Por: R$${product.price},00`;
+        price.textContent = `Por: R$${floatToString(product.price)}`;
         productInfo.appendChild(price);
 
         var installments = document.createElement('h5');
-        installments.textContent = `ou ${product.installments.count}X de R$${product.installments.value}`
+        installments.textContent = `ou ${product.installments.count}X de R$${floatToString(product.installments.value)}`
         productInfo.appendChild(installments);
 
         var button = document.createElement('button');
